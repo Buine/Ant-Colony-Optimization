@@ -225,7 +225,7 @@ public class AntColonyOptimization
         for (int i = 0; i < numberOfCities; i++) 
         {
             for (int j = 0; j < numberOfCities; j++) 
-                trails[i][j] *= evaporation;
+                trails[i][j] *= (1 - evaporation); /*From the equation (1 - p)*/ 
         }
         for (Ant a : ants) 
         {
